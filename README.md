@@ -12,7 +12,7 @@
    git config --global user.email $GITHUB_ACCOUNT@users.noreply.github.com
    git config --global core.autocrlf false # crlf,lfの自動変換を無効
    git config --global core.ignorecase false # 大文字小文字の自動修正を無効
-   git config --global pull.ff false # pullの自動マージを無効
+   git config --global pull.ff only # pullの自動マージを無効
    git config --global push.default current # 現在の作業ブランチをプッシュ
    ```
 
