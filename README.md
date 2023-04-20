@@ -1,12 +1,12 @@
 # git-workshop
 
-## gitの設定
+## git の設定
 
-1. vscodeとgitは適当にインストールする(初回のみ)
+1. vscode と git は適当にインストールする(初回のみ)
 
-1. githubのアカウントを適当に作る
+1. github のアカウントを適当に作る
 
-1. gitの設定をする。シェルに以下を打つ。
+1. git の設定をする。シェルに以下を打つ。
 
    ```sh
    GITHUB_ACCOUNT=??? # 自分のアカウント名に変更
@@ -20,15 +20,15 @@
 
    その他適宜設定をする。
 
-1. githubにssh-key登録する
+1. github に ssh-key 登録する
 
-   秘密鍵の作成。ed25519は楕円曲線暗号でめっちゃ安全。
+   秘密鍵の作成。ed25519 は楕円曲線暗号でめっちゃ安全。
 
    ```sh
    ssh-keygen -t ed25519 -C ""
    ```
 
-   作った`id_ed25519.pub`をgithubにコピペ。
+   作った`id_ed25519.pub`を github にコピペ。
 
    ```sh
    cat ~/.ssh/id_ed25519.pub #出てくる文字列をコピー
@@ -38,9 +38,9 @@
 
    https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
-## gitの基本の流れ
+## git の基本の流れ
 
-1. git cloneする
+1. git clone する
 
    ```bash
    # ssh URLで
@@ -49,13 +49,13 @@
    code git-workshop
    ```
 
-1. vscodeでターミナルを開く
+1. vscode でターミナルを開く
 
    `Ctrl+Shift+@`
 
 1. ファイル編集とかする
 
-1. git addする
+1. git add する
 
    ```sh
    # -A ないと削除したファイルはそのままになる
@@ -68,17 +68,19 @@
    git commit -m '修正１'
    ```
 
-1. git push　する
+1. git push 　する
 
    ```sh
    git push
    ```
 
-githubに変更が反映されていたら成功。
+github に変更が反映されていたら成功。
 
 ## その他
 
-- 複雑な修正はissueに概要を書き専用のブランチを作って対応する
-- mainブランチに他の人の進捗が先に入ったときは`git rebase`してから`git push`する
-- コミットメッセージにissue番号入れると勝手にリンクがはられる
-- fix: なんとかを修正 #14 とかいうコミットメッセージにするとissueの#14が勝手に閉じる
+- 複雑な修正は issue に概要を書き専用のブランチを作って対応する
+- main ブランチに他の人の進捗が先に入ったときは`git rebase`してから`git push`する
+- コミットメッセージに issue 番号入れると勝手にリンクがはられる
+- fix: なんとかを修正 #14 とかいうコミットメッセージにすると issue の#14 が勝手に閉じる
+
+henkou
