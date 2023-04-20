@@ -18,8 +18,6 @@
 
    その他適宜設定をする。
 
-   https://blog.katsubemakito.net/git/git-config-1st
-
 1. githubにssh-key登録する
 
    秘密鍵の作成。ed25519は楕円曲線暗号でめっちゃ安全。コメントは適宜変更。
